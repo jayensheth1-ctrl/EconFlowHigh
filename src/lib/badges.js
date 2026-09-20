@@ -177,7 +177,7 @@ export const BADGES = [
     name: "EconFlow Legend",
     emoji: "👑",
     desc: "Earn every other badge. The ultimate prestige.",
-    gems: 10,
+    gems: 150,
     isLegend: true,
     check: (p) => {
       const otherIds = BADGES.filter(b => b.id !== "econflow_legend").map(b => b.id);
