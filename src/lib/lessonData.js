@@ -1,202 +1,315 @@
 export const units = [
   {
     id: "unit-1",
-    title: "Money Basics & Choices",
-    description: "Learn what money is and how we use it",
+    title: "Stocks, Bonds & Portfolio Theory",
+    description: "Master the mechanics of equity and debt markets",
     color: "from-emerald-400 to-emerald-600",
     lessons: [
       {
         id: "1-1",
-        title: "What is Money?",
-        studyBrief: "Long ago, people didn't use paper bills or metal coins. Instead, they traded useful or beautiful items like shells, beads, or even salt! Today, we use official coins and dollar bills to buy the things we need and want. Money is a tool that everyone agrees to use because it makes trading easy. When you do a chore and earn a dollar, that bill holds value because you can take it to a store and swap it for a toy or a snack.",
+        title: "Equity vs. Debt: Stocks and Bonds",
+        studyBrief: "A stock represents partial ownership (equity) in a company. Shareholders earn returns through price appreciation and dividends, but bear risk if the company underperforms. A bond is a debt instrument -- the investor loans money to a corporation or government in exchange for periodic interest (coupon payments) and the return of principal at maturity. Equity sits below debt in the capital structure, meaning bondholders are paid first in bankruptcy. This seniority is why bonds are generally less volatile than stocks. Understanding both instruments is foundational to building any investment portfolio.",
         questions: [
           {
             type: "multiple_choice",
-            question: "What do people use money for today?",
+            question: "In a company's capital structure, who gets paid first in the event of bankruptcy?",
             options: [
-              "To buy things they need and want",
-              "To give allowances to their kids",
-              "To invest in the stock market",
-              "To pay taxes to the US Government"
+              "Bondholders (debt holders)",
+              "Common stockholders",
+              "Preferred stockholders",
+              "Company executives"
             ],
             correct: 0,
-            explanation: "Money is a helpful tool that we use to buy goods and services every day."
+            explanation: "Bondholders are creditors with seniority over equity holders -- they are paid before any shareholders in a liquidation."
           },
           {
             type: "true_false",
-            question: "Long ago, people sometimes used items like shells or salt as money.",
+            question: "A stockholder is a partial owner of a company, while a bondholder is a creditor who has lent money to it.",
             correct: true,
-            explanation: "True! Before paper bills were invented, people traded useful or pretty objects."
+            explanation: "Stocks represent ownership (equity); bonds represent debt owed by the company to the investor."
           },
           {
             type: "multiple_choice",
-            question: "If you wash your family's car and earn $5, what are you doing?",
-            options: ["Earning money", "Paying taxes", "Borrowing money", "Losing money"],
+            question: "What is a coupon payment in bond investing?",
+            options: [
+              "Periodic interest payments made to the bondholder",
+              "A discount given to early bond buyers",
+              "A penalty fee for selling bonds early",
+              "The face value returned at maturity"
+            ],
             correct: 0,
-            explanation: "When you do work and get paid for it, you are earning money."
+            explanation: "A coupon is the regular interest payment a bondholder receives, typically semi-annually, until the bond matures."
           },
           {
             type: "word_bank",
-            question: "Today we use paper ___ and metal ___ to buy things at the store.",
-            blanks: ["bills", "coins"],
-            options: ["bills", "coins", "shells", "leaves", "toys"],
-            explanation: "Our modern currency is made up of printed paper bills and stamped metal coins."
+            question: "Stocks represent ___ in a company, while bonds represent ___ to a company.",
+            blanks: ["ownership", "lending"],
+            options: ["ownership", "lending", "insurance", "taxation", "donation"],
+            explanation: "Buying stock makes you a part-owner; buying a bond makes you a lender who expects repayment with interest."
           },
-         {
+          {
             type: "true_false",
-            question: "Money only works if everyone agrees that it has value.",
-            correct: true,
-            explanation: "Exactly! Money works because shopkeepers and shoppers all agree to trust its value."
+            question: "Because bondholders have seniority over stockholders, bonds typically offer higher returns than stocks over the long run.",
+            correct: false,
+            explanation: "Lower risk means lower expected return -- stocks have historically outperformed bonds over long periods precisely because they carry more risk."
           }
         ]
       },
       {
         id: "1-2",
-        title: "Needs vs. Wants",
-        studyBrief: "Every day we make choices about money. A 'need' is something you absolutely must have to live a safe and healthy life, like water, healthy food, a warm coat, and a place to live. A 'want' is something that is nice to have, but you can live perfectly fine without it, like video games, candy, or a skateboard. Because money is limited, it is always smart to pay for your needs before you spend money on your wants.",
+        title: "How Stock Markets Work",
+        studyBrief: "Stock exchanges like the NYSE and NASDAQ are marketplaces where buyers and sellers trade shares. Prices are driven by supply and demand -- when more people want to buy than sell, prices rise; when sellers outnumber buyers, prices fall. Market capitalization (market cap) is calculated by multiplying share price by total shares outstanding and reflects a company's total market value. Indices like the S&P 500 and Dow Jones Industrial Average track the average performance of a basket of stocks, serving as benchmarks for the overall market.",
         questions: [
           {
             type: "multiple_choice",
-            question: "Which of the following is a basic human need?",
+            question: "How is a company's market capitalization calculated?",
             options: [
-              "Clean drinking water",
-              "A new video game console",
-              "An electronic device",
-              "Luxury clothing"
+              "Share price multiplied by total shares outstanding",
+              "Annual revenue minus total expenses",
+              "Total assets minus total liabilities",
+              "Net income divided by shares outstanding"
             ],
             correct: 0,
-            explanation: "Water is necessary for your body to stay alive and healthy, making it a true need."
+            explanation: "Market cap = share price x shares outstanding. It reflects what the market believes the entire company is worth."
+          },
+          {
+            type: "true_false",
+            question: "The S&P 500 tracks the performance of the 500 largest publicly traded companies in the US.",
+            correct: true,
+            explanation: "The S&P 500 is the most widely followed benchmark for the US stock market, representing roughly 80% of total US market cap."
           },
           {
             type: "multiple_choice",
-            question: "Which item is considered a personal want?",
-            options: ["A toy racecar", "A stable lifestyle", "A safe home", "Healthy dinner"],
+            question: "If more investors want to sell a stock than buy it, what typically happens to the price?",
+            options: [
+              "The price falls",
+              "The price rises",
+              "The price stays the same",
+              "The company issues more shares"
+            ],
             correct: 0,
-            explanation: "A toy is fun to play with, but you can live safely and happily without it."
-          },
-          {
-            type: "true_false",
-            question: "It is a smart idea to buy your wants before paying for your needs.",
-            correct: false,
-            explanation: "False! Always take care of your important needs first so you stay safe and healthy."
+            explanation: "Excess supply relative to demand pushes prices down -- the same supply and demand mechanics that govern any market."
           },
           {
             type: "word_bank",
-            question: "A jacket is a ___ in the freezing winter, but a new comic book is a ___.",
-            blanks: ["need", "want"],
-            options: ["need", "want", "gift", "chore", "tax"],
-            explanation: "Staying warm keeps you healthy (need), while entertainment is just for fun (want)."
+            question: "Stock ___ like the NYSE match ___ and sellers to set share prices.",
+            blanks: ["exchanges", "buyers"],
+            options: ["exchanges", "buyers", "banks", "governments", "regulators"],
+            explanation: "Exchanges are organized marketplaces that facilitate price discovery by connecting buyers and sellers of securities."
           },
           {
             type: "true_false",
-            question: "If you run out of money buying toys, you might not have enough for food.",
+            question: "A stock index like the Dow Jones gives investors a snapshot of how a broad set of companies are performing.",
             correct: true,
-            explanation: "True! Since money is limited, spending it on wants can leave you short on needs."
+            explanation: "Indices aggregate the performance of multiple stocks into a single number, making it easy to gauge overall market direction."
           }
         ]
       },
-      
-  
+      {
+        id: "1-3",
+        title: "Portfolio Theory and Diversification",
+        studyBrief: "Modern Portfolio Theory (MPT), developed by Harry Markowitz, argues that investors can optimize returns for a given level of risk by diversifying across assets that do not move in perfect correlation. Correlation measures how two assets move relative to each other: a correlation of +1 means they move identically, while -1 means they move in opposite directions. Combining assets with low or negative correlation reduces portfolio volatility without sacrificing expected return. The efficient frontier represents the set of portfolios offering the best possible return for each level of risk. Asset allocation -- the split between stocks, bonds, and other assets -- is the primary driver of long-term portfolio performance.",
+        questions: [
+          {
+            type: "multiple_choice",
+            question: "What does Modern Portfolio Theory argue investors can achieve through diversification?",
+            options: [
+              "Optimized returns for a given level of risk",
+              "Guaranteed profits regardless of market conditions",
+              "Elimination of all investment risk",
+              "Higher returns by concentrating in one asset"
+            ],
+            correct: 0,
+            explanation: "MPT shows that combining assets with low correlation reduces portfolio risk without proportionally reducing expected return -- the foundation of diversification."
+          },
+          {
+            type: "true_false",
+            question: "Two assets with a correlation of -1 move in exactly opposite directions.",
+            correct: true,
+            explanation: "A correlation of -1 is perfect negative correlation -- when one asset rises, the other falls by an equivalent amount, providing maximum diversification benefit."
+          },
+          {
+            type: "multiple_choice",
+            question: "What is 'asset allocation'?",
+            options: [
+              "The distribution of a portfolio across stocks, bonds, and other asset classes",
+              "The process of picking the best individual stocks",
+              "The fee charged by a fund manager",
+              "The total value of all investments held"
+            ],
+            correct: 0,
+            explanation: "Asset allocation -- how you divide your portfolio among asset classes -- is widely considered the primary driver of long-term investment returns."
+          },
+          {
+            type: "word_bank",
+            question: "The ___ frontier shows the portfolios with the best ___ for each level of risk.",
+            blanks: ["efficient", "return"],
+            options: ["efficient", "return", "costly", "loss", "market"],
+            explanation: "The efficient frontier is the set of optimal portfolios that offer the highest expected return for a defined level of risk."
+          },
+          {
+            type: "true_false",
+            question: "Combining assets with high positive correlation provides stronger diversification benefits than combining low-correlation assets.",
+            correct: false,
+            explanation: "High positive correlation means assets move together -- combining them does little to reduce portfolio volatility. Low or negative correlation is what creates diversification."
+          }
+        ]
+      }
     ]
   },
   {
     id: "unit-2",
-    title: "Saving & Smart Spending",
-    description: "Discover how to grow your money",
+    title: "Advanced Market Economics",
+    description: "Analyze price mechanisms, market failures, and competition",
     color: "from-blue-400 to-blue-600",
     lessons: [
       {
         id: "2-1",
-        title: "The Piggy Bank Secret",
-        studyBrief: "Saving means keeping your money in a safe place instead of spending it right away. When you put coins into a piggy bank or a savings account at a bank, your money waits for you. If you save a little bit of money every single week, your pile grows bigger and bigger. This is called a savings habit. Saving helps you buy bigger things in the future that cost more than you have right now.",
+        title: "Price Elasticity and Consumer Behavior",
+        studyBrief: "Price elasticity of demand measures how sensitive consumers are to price changes. It is calculated as the percentage change in quantity demanded divided by the percentage change in price. If the result is greater than 1, demand is elastic (consumers are sensitive to price). If less than 1, demand is inelastic (consumers buy roughly the same amount regardless of price changes). Necessities like insulin tend to be inelastic; luxury goods like designer handbags are elastic. Businesses use elasticity to set prices -- raising prices on inelastic goods increases revenue, while raising prices on elastic goods can cause sales to collapse.",
         questions: [
           {
             type: "multiple_choice",
-            question: "What does it mean to save money?",
+            question: "If a 10% price increase causes a 25% drop in quantity demanded, demand is:",
             options: [
-              "Keeping your money to use later",
-              "Spending all your coins today",
-              "Borrowing money from others",
-              "Not paying your taxes"
+              "Elastic (sensitive to price)",
+              "Inelastic (insensitive to price)",
+              "Perfectly inelastic",
+              "Unit elastic"
             ],
             correct: 0,
-            explanation: "Saving means pausing and protecting your money so you can use it in the future."
+            explanation: "Elasticity = 25% / 10% = 2.5, which is greater than 1, meaning demand is elastic -- consumers are highly responsive to this price change."
           },
           {
             type: "true_false",
-            question: "If you save a small amount of money regularly, your savings will grow over time.",
+            question: "Necessities like life-saving medication tend to have inelastic demand because consumers must buy them regardless of price.",
             correct: true,
-            explanation: "Yes! Small amounts add up over time to create a big pile of savings."
-          },
-          {
-            type: "word_bank",
-            question: "Instead of spending money today, you can ___ it for the ___.",
-            blanks: ["save", "future"],
-            options: ["save", "future", "lose", "yesterday", "use"],
-            explanation: "Saving means looking ahead and preparing your money for future goals."
+            explanation: "When there are no substitutes and the product is essential, consumers continue purchasing even as prices rise -- classic inelastic demand."
           },
           {
             type: "multiple_choice",
-            question: "Why would someone want to save their money?",
+            question: "A business selling an inelastic product should consider raising prices because:",
             options: [
-              "To buy a bigger item later, like a bicycle",
-              "Because they hate toys",
-              "To ignore their basic needs",
-              "Because banks require you to store all cash"
+              "Revenue will increase even as quantity sold drops slightly",
+              "Customers will buy more when prices are higher",
+              "The government mandates higher prices for necessities",
+              "Competitors will lower their prices in response"
             ],
             correct: 0,
-            explanation: "Saving allows you to purchase expensive things that require multiple weeks of allowance."
+            explanation: "With inelastic demand, the revenue gained from a higher price outweighs the small drop in units sold -- total revenue increases."
+          },
+          {
+            type: "word_bank",
+            question: "Price elasticity is calculated by dividing the percentage change in ___ demanded by the percentage change in ___.",
+            blanks: ["quantity", "price"],
+            options: ["quantity", "price", "supply", "income", "profit"],
+            explanation: "Elasticity = % change in quantity demanded / % change in price. A result above 1 means elastic; below 1 means inelastic."
           },
           {
             type: "true_false",
-            question: "A piggy bank is one place you can use to start a saving habit.",
-            correct: true,
-            explanation: "True! A piggy bank or a small jar is a great place to start watching your money grow."
+            question: "Luxury goods typically have inelastic demand because consumers consider them essential.",
+            correct: false,
+            explanation: "Luxury goods are elastic -- consumers can easily forgo them when prices rise, making demand highly sensitive to price changes."
           }
         ]
       },
       {
         id: "2-2",
-        title: "The Three Jars Rule",
-        studyBrief: "A great way to manage your allowance or chore money is to use three different jars labeled: Spend, Save, and Give. The 'Spend' jar is for small things you want right now, like a piece of gum. The 'Save' jar is for bigger goals, like a box of building blocks. The 'Give' jar is for helping others, like buying food for an animal shelter or helping a friend. This keeps your money organized and balanced!",
+        title: "Market Structures and Competition",
+        studyBrief: "Markets are classified by the level of competition among sellers. A perfectly competitive market has many sellers offering identical products with no single seller controlling price -- participants are 'price takers.' A monopoly has one dominant seller with significant pricing power. An oligopoly features a small number of large firms (like the airline industry) that are interdependent -- one firm's pricing decision affects all others. A monopolistically competitive market has many sellers offering differentiated products (like fast food chains). Market power -- the ability to set prices above competitive levels -- leads to higher prices and reduced output, which is why antitrust regulators monitor monopolies and oligopolies.",
         questions: [
           {
             type: "multiple_choice",
-            question: "What are the three jars used for in this budgeting rule?",
+            question: "In a perfectly competitive market, individual firms are called 'price takers' because:",
             options: [
-              "Spend, Save, and Give",
-              "Need, Want, and Tax",
-              "Buy, Hide, and Lose",
-              "Coins, Bills, and Buttons"
+              "They have no power to influence the market price",
+              "They set prices higher than the market rate",
+              "The government controls their pricing",
+              "They compete only on quality, not price"
             ],
             correct: 0,
-            explanation: "Dividing money into Spend, Save, and Give helps you balance your financial choices."
+            explanation: "With many identical sellers, no single firm can raise its price without losing all customers to competitors -- so they must accept the market price."
           },
           {
             type: "true_false",
-            question: "The 'Give' jar is meant to buy things only for yourself.",
-            correct: false,
-            explanation: "False! The Give jar is dedicated to helping other people, animals, or your community."
+            question: "An oligopoly is characterized by a small number of large firms whose pricing decisions are interdependent.",
+            correct: true,
+            explanation: "In an oligopoly, each firm must consider how rivals will respond to its pricing moves -- making strategic interdependence the defining feature."
           },
           {
             type: "multiple_choice",
-            question: "If you want to buy a bicycle next year, which jar should get the most money?",
-            options: ["The Save jar", "The Spend jar", "The Give jar", "The Want jar"],
+            question: "Which market structure gives a single seller the most pricing power?",
+            options: [
+              "Monopoly",
+              "Perfect competition",
+              "Monopolistic competition",
+              "Oligopoly"
+            ],
             correct: 0,
-            explanation: "Big items that take a long time to afford belong in your long-term Save jar."
+            explanation: "A monopolist faces no direct competition, allowing it to set prices significantly above competitive levels -- the definition of maximum market power."
           },
           {
             type: "word_bank",
-            question: "The ___ jar is for small treats today, while the ___ jar is for helping your community.",
-            blanks: ["Spend", "Give"],
-            options: ["Spend", "Give", "Save", "Hide", "Need"],
-            explanation: "Spending handles immediate desires, while giving focuses on kindness to others."
+            question: "A ___ has one dominant seller, while an ___ has a few large competing firms.",
+            blanks: ["monopoly", "oligopoly"],
+            options: ["monopoly", "oligopoly", "cartel", "cooperative", "exchange"],
+            explanation: "Monopolies and oligopolies both have significant market power, but oligopolies involve strategic competition among a small group of large firms."
           },
           {
             type: "true_false",
-            question: "Separating your money into jars helps you make smart financial choices.",
+            question: "Antitrust laws exist to promote competition and prevent companies from gaining excessive market power.",
             correct: true,
-            explanation: "True! Visually dividing your money prevents you from accidentally spending it all at once."
+            explanation: "Laws like the Sherman Antitrust Act give regulators the power to break up monopolies and block mergers that would harm competition."
+          }
+        ]
+      },
+      {
+        id: "2-3",
+        title: "Market Failures and Externalities",
+        studyBrief: "A market failure occurs when free markets allocate resources inefficiently. Externalities are costs or benefits that fall on third parties not involved in a transaction. Negative externalities (like factory pollution) cause overproduction because the producer does not pay the full social cost. Positive externalities (like education) cause underproduction because the provider cannot capture all the social benefit. Governments address these failures through taxes on negative externalities (Pigouvian taxes), subsidies for positive ones, or direct regulation. Public goods -- non-excludable and non-rivalrous, like national defense -- are chronically underprovided by private markets because of the free-rider problem.",
+        questions: [
+          {
+            type: "multiple_choice",
+            question: "A factory that pollutes a river without paying for the environmental damage is an example of:",
+            options: [
+              "A negative externality",
+              "A positive externality",
+              "A public good",
+              "Perfect competition"
+            ],
+            correct: 0,
+            explanation: "A negative externality is a cost imposed on third parties not involved in the transaction -- the factory profits while society bears the environmental cost."
+          },
+          {
+            type: "true_false",
+            question: "Positive externalities tend to cause underproduction because producers cannot capture all the social benefits they create.",
+            correct: true,
+            explanation: "Education benefits society beyond the individual student, but schools can only charge the student -- so education is underproduced relative to its true social value."
+          },
+          {
+            type: "multiple_choice",
+            question: "What is a Pigouvian tax?",
+            options: [
+              "A tax on activities that create negative externalities, like pollution",
+              "A tax on imported goods to protect domestic industry",
+              "A flat income tax applied to all citizens equally",
+              "A tax on luxury goods to reduce inequality"
+            ],
+            correct: 0,
+            explanation: "A Pigouvian tax forces producers to internalize the social cost of their negative externalities, reducing overproduction to the socially optimal level."
+          },
+          {
+            type: "word_bank",
+            question: "Public goods suffer from the ___ problem, where people benefit without ___ for the cost.",
+            blanks: ["free-rider", "paying"],
+            options: ["free-rider", "paying", "inflation", "earning", "monopoly"],
+            explanation: "Because public goods are non-excludable, people can enjoy them without paying -- making private provision unprofitable and government provision necessary."
+          },
+          {
+            type: "true_false",
+            question: "National defense is a private good because only those who pay for it receive its benefits.",
+            correct: false,
+            explanation: "National defense is a classic public good -- it is non-excludable (you can't deny protection to non-payers) and non-rivalrous (one person's protection doesn't reduce another's)."
           }
         ]
       }
@@ -204,107 +317,107 @@ export const units = [
   },
   {
     id: "unit-3",
-    title: "Jobs & The Community",
-    description: "See how people work together",
+    title: "Personal Finance and Wealth Building",
+    description: "Build a complete financial plan for long-term wealth",
     color: "from-purple-400 to-purple-600",
     lessons: [
       {
         id: "3-1",
-        title: "Goods and Services",
-        studyBrief: "People in a community earn money by creating 'goods' or providing 'services.' Goods are real physical objects you can touch and hold, like a book, a loaf of bread, an apple, or a pair of shoes. Services are helpful actions that people perform for you, like a barber cutting your hair, a doctor checking your health, or a bus driver taking you to school. Both goods and services make our lives easier and better.",
+        title: "Advanced Budgeting and Tax Strategy",
+        studyBrief: "Effective personal finance begins with understanding your full income picture. Gross income is your total earnings; adjusted gross income (AGI) reflects deductions like student loan interest or retirement contributions; taxable income is what remains after the standard or itemized deduction. Marginal tax rates apply only to income within each bracket -- not your total income. Tax-advantaged accounts like 401(k)s and IRAs allow contributions to grow tax-deferred or tax-free, dramatically compounding wealth over time. Understanding the difference between a tax deduction (which reduces taxable income) and a tax credit (which directly reduces taxes owed) is critical for optimizing your tax bill.",
         questions: [
           {
             type: "multiple_choice",
-            question: "Which of the following is an example of a physical good?",
+            question: "What is the difference between a tax deduction and a tax credit?",
             options: [
-              "A shiny new bicycle",
-              "A piano lesson",
-              "A haircut at a salon",
-              "A dog-walking service"
+              "A deduction reduces taxable income; a credit directly reduces taxes owed",
+              "A deduction reduces taxes owed; a credit reduces taxable income",
+              "They are two terms for the same thing",
+              "A credit only applies to businesses, not individuals"
             ],
             correct: 0,
-            explanation: "A bicycle is a real physical object that you can touch, making it a good."
+            explanation: "A $1,000 deduction saves you $1,000 x your tax rate; a $1,000 credit saves you the full $1,000 -- credits are generally more valuable dollar-for-dollar."
           },
           {
             type: "true_false",
-            question: "A teacher helping you learn in school is providing a service.",
+            question: "Contributing to a 401(k) reduces your taxable income in the year you make the contribution.",
             correct: true,
-            explanation: "True! Teaching is an activity or action performed to help you, which is a service."
-          },
-          {
-            type: "word_bank",
-            question: "An ice cream cone is a ___ you eat, but fixing a broken car is a ___.",
-            blanks: ["good", "service"],
-            options: ["good", "service", "money", "chore", "tax"],
-            explanation: "Objects you can hold are goods, while helpful actions or skills are services."
+            explanation: "Traditional 401(k) contributions are pre-tax, directly reducing your AGI and therefore your current-year tax bill."
           },
           {
             type: "multiple_choice",
-            question: "What is a service?",
+            question: "Your marginal tax rate applies to:",
             options: [
-              "An action or job someone does to help you",
-              "A chore you are forced to do",
-              "A physical object like a toy box",
-              "A type of tax you pay"
+              "Only the income earned above the current bracket threshold",
+              "All of your income equally",
+              "Only your investment income",
+              "Income earned from self-employment only"
             ],
             correct: 0,
-            explanation: "Services are tasks performed by individuals utilizing their time and skills to help others."
+            explanation: "The US uses a progressive marginal system -- only income above each bracket threshold is taxed at that bracket's rate, not your entire income."
+          },
+          {
+            type: "word_bank",
+            question: "A ___ account lets your investments grow tax-free or tax-deferred, while a ___ deduction lowers your taxable income.",
+            blanks: ["retirement", "standard"],
+            options: ["retirement", "standard", "checking", "itemized", "brokerage"],
+            explanation: "Retirement accounts (401k, IRA) shelter investment growth from taxes; the standard deduction reduces the income you are taxed on in the first place."
           },
           {
             type: "true_false",
-            question: "Shoes, pencils, and pizzas are all examples of services.",
+            question: "A $1,000 tax credit and a $1,000 tax deduction result in the same reduction to your final tax bill.",
             correct: false,
-            explanation: "False! These are all physical items you can touch, which means they are goods."
+            explanation: "A $1,000 credit reduces your tax bill by $1,000. A $1,000 deduction only reduces your bill by $1,000 multiplied by your marginal rate (e.g., $220 at 22%)."
           }
         ]
       },
       {
         id: "3-2",
-        title: "Earning a Living",
-        studyBrief: "An income is the money a person receives in exchange for doing a job. Adults choose different careers—like being a chef, an engineer, a firefighter, or an artist—to earn an income. This income is then used to pay for their family's food, clothing, and housing. Incomplete chores at home can sometimes mimic this; completing your tasks responsibly might earn you a small allowance, which introduces how real-world jobs work.",
+        title: "Credit, Debt, and Interest",
+        studyBrief: "Your credit score (300-850) is a numerical representation of your creditworthiness, calculated from payment history (35%), amounts owed (30%), length of credit history (15%), credit mix (10%), and new credit (10%). A higher score unlocks lower interest rates on mortgages, auto loans, and credit cards, saving tens of thousands of dollars over a lifetime. The Annual Percentage Rate (APR) is the true annual cost of borrowing, including fees. Credit card debt is particularly dangerous because of compound interest -- carrying a balance at 20% APR can cause debt to snowball rapidly. The debt avalanche method (paying highest-interest debt first) minimizes total interest paid; the debt snowball (paying smallest balance first) provides psychological momentum.",
         questions: [
           {
             type: "multiple_choice",
-            question: "What is an income?",
+            question: "Which factor has the greatest weight in calculating your credit score?",
             options: [
-              "The money you receive for doing a job",
-              "A list of things you want to buy",
-              "The specfic cost of something you want to buy",
-              "A tax that is applied to your salary"
+              "Payment history (35%)",
+              "Amounts owed (30%)",
+              "Length of credit history (15%)",
+              "New credit inquiries (10%)"
             ],
             correct: 0,
-            explanation: "Income is the money flowing into your pocket as a reward for your labor or job."
+            explanation: "Payment history is the single biggest factor -- consistently paying bills on time is the most effective way to build and maintain a strong credit score."
           },
           {
             type: "true_false",
-            question: "Adults use their job income to pay for things like rent and groceries.",
+            question: "A higher credit score typically results in lower interest rates on loans and credit cards.",
             correct: true,
-            explanation: "True! Job income covers both essential living expenses and fun extra items."
-          },
-          {
-            type: "word_bank",
-            question: "People work a ___ to earn an ___ that supports their families.",
-            blanks: ["job", "income"],
-            options: ["job", "income", "tax", "allowance", "expense"],
-            explanation: "Working a regular job provides the steady income required to buy household goods."
+            explanation: "Lenders reward low-risk borrowers with lower rates -- even a 1% rate reduction on a 30-year mortgage can save over $50,000 in total interest."
           },
           {
             type: "multiple_choice",
-            question: "Which of these is a way an elementary school student might earn a small income?",
+            question: "What does APR stand for, and what does it measure?",
             options: [
-              "Doing extra chores around the house",
-              "Becoming an Uber driver",
-              "Trading in the cryptocurrency market",
-              "Working the nightly shift at a local factory"
+              "Annual Percentage Rate -- the true yearly cost of borrowing including fees",
+              "Average Payment Rate -- your monthly minimum payment",
+              "Adjusted Principal Rate -- the interest on your original loan balance only",
+              "Annual Profit Ratio -- the return on a savings account"
             ],
             correct: 0,
-            explanation: "Helping out at home with extra chores is a classic way for kids to earn allowance money."
+            explanation: "APR includes both the interest rate and fees, giving borrowers a standardized way to compare the true cost of different loan products."
+          },
+          {
+            type: "word_bank",
+            question: "The debt ___ method pays the highest-interest debt first, while the debt ___ pays the smallest balance first.",
+            blanks: ["avalanche", "snowball"],
+            options: ["avalanche", "snowball", "cascade", "spiral", "ladder"],
+            explanation: "The avalanche minimizes total interest paid; the snowball builds motivation through quick wins -- choose based on your financial situation and psychology."
           },
           {
             type: "true_false",
-            question: "Every single job pays the exact same amount of money.",
+            question: "Carrying a high credit card balance relative to your limit (high credit utilization) helps improve your credit score.",
             correct: false,
-            explanation: "False! Different jobs have different pay rates depending on the tasks and training involved."
+            explanation: "High utilization signals financial stress to lenders and hurts your score -- keeping utilization below 30% (ideally below 10%) is recommended."
           }
         ]
       }
@@ -312,107 +425,157 @@ export const units = [
   },
   {
     id: "unit-4",
-    title: "The Marketplace",
-    description: "Explore how stores and trading work",
+    title: "Advanced Investing",
+    description: "Options, ETFs, factor investing, and behavioral finance",
     color: "from-amber-400 to-amber-600",
     lessons: [
       {
         id: "4-1",
-        title: "Buyers and Sellers",
-        studyBrief: "A market is any place where people gather to buy and sell things. A 'buyer' is a customer who gives money to get a good or a service. A 'seller' is a shopkeeper or worker who provides the item and takes the money. For example, at a farmers' market, you are the buyer looking for fresh strawberries, and the farmer is the seller. Both people leave the market happy because they exchanged things they valued!",
+        title: "Options, Futures, and Derivatives",
+        studyBrief: "Derivatives are financial instruments whose value is derived from an underlying asset like a stock, commodity, or currency. A call option gives the buyer the right -- but not the obligation -- to purchase an asset at a set price (strike price) before a set date (expiration). A put option gives the right to sell. Options buyers pay a premium for this right. Futures contracts obligate both parties to buy or sell an asset at a predetermined price on a future date -- used by farmers to lock in crop prices and airlines to hedge fuel costs. Derivatives can be used for hedging (reducing risk) or speculation (amplifying potential gains and losses).",
         questions: [
           {
             type: "multiple_choice",
-            question: "Who is a buyer at a store?",
+            question: "What does a call option give its holder the right to do?",
             options: [
-              "The customer who pays money for an item",
-              "The person who works the cash register",
-              "The worker who manages finances",
-              "The workers who deliver inventory"
+              "Buy an asset at the strike price before expiration",
+              "Sell an asset at the strike price before expiration",
+              "Borrow shares to sell them short",
+              "Receive dividends from the underlying stock"
             ],
             correct: 0,
-            explanation: "The buyer is the consumer spending money to acquire an object or service."
+            explanation: "A call option is the right to buy -- if the asset's market price rises above the strike price, the call holder profits by buying at the lower strike price."
           },
           {
             type: "true_false",
-            question: "A seller's job is to give away store items completely for free.",
-            correct: false,
-            explanation: "False! Sellers trade their goods or services in exchange for money."
-          },
-          {
-            type: "word_bank",
-            question: "The ___ gives money to the ___ to get a new item or service.",
-            blanks: ["buyer", "seller"],
-            options: ["buyer", "seller", "manager", "banker", "company"],
-            explanation: "A transaction requires a buyer spending currency and a seller trading inventory."
+            question: "Unlike options, futures contracts obligate both the buyer and seller to complete the transaction.",
+            correct: true,
+            explanation: "Options give the right but not the obligation to transact; futures are binding contracts -- both parties must fulfill the agreement at the specified price and date."
           },
           {
             type: "multiple_choice",
-            question: "Which place is an example of a marketplace?",
+            question: "An airline buying oil futures to lock in fuel prices is an example of:",
             options: [
-              "A local grocery store",
-              "A magazine that you read",
-              "Netflix",
-              "A school you go to"
+              "Hedging to reduce risk",
+              "Speculating to profit from price changes",
+              "Arbitrage across markets",
+              "Short selling the commodity"
             ],
             correct: 0,
-            explanation: "A grocery store is a classic marketplace full of buyers and active sellers."
+            explanation: "Hedging uses derivatives to offset risk in an existing exposure -- the airline reduces uncertainty about future fuel costs, not to profit from price moves."
+          },
+          {
+            type: "word_bank",
+            question: "A ___ option gives you the right to buy, while a ___ option gives you the right to sell.",
+            blanks: ["call", "put"],
+            options: ["call", "put", "forward", "swap", "futures"],
+            explanation: "Call = right to buy (you profit if price rises). Put = right to sell (you profit if price falls). Together they are the building blocks of options strategies."
           },
           {
             type: "true_false",
-            question: "When a trade is fair, both the buyer and the seller are happy.",
-            correct: true,
-            explanation: "True! Both sides get something they want: the buyer gets a product, the seller gets money."
+            question: "Derivatives can only be used for speculation and never for risk management.",
+            correct: false,
+            explanation: "Derivatives were originally designed for hedging -- farmers, airlines, and exporters routinely use them to reduce, not increase, their risk exposure."
           }
         ]
       },
       {
         id: "4-2",
-        title: "Prices & Scarcity",
-        studyBrief: "Have you ever wondered why some things cost more than others? A 'price' is the amount of money you must pay to buy something. If an item is rare or hard to make, it has 'scarcity,' which means there isn't enough of it for everyone. When a toy becomes super popular but the store only has three left, the price often goes up. If the store has thousands of copies of that same toy, the price usually drops because it is easy to get.",
+        title: "ETFs, Index Funds, and Factor Investing",
+        studyBrief: "An Exchange-Traded Fund (ETF) is a basket of securities that trades on an exchange like a single stock. Index ETFs passively track a benchmark like the S&P 500, offering broad diversification at very low cost (expense ratios often below 0.1%). Actively managed funds charge higher fees (often 1%+) and attempt to beat the index, but research consistently shows most active managers underperform over the long run -- partly due to fees. Factor investing targets specific characteristics shown to deliver excess returns: value (cheap relative to fundamentals), momentum (recent winners continue outperforming), and quality (high profitability companies). These 'smart beta' strategies sit between pure indexing and active management.",
         questions: [
           {
             type: "multiple_choice",
-            question: "What does it mean if a popular toy is scarce?",
+            question: "What is an index ETF designed to do?",
             options: [
-              "There are not enough copies for everyone who wants one",
-              "The toy is dangerous for children to use",
-              "The toy is too expensive for people to buy",
-              "There are too many toys with not enough people buying them"
+              "Passively track the performance of a market benchmark at low cost",
+              "Actively pick winning stocks to beat the market",
+              "Invest only in government bonds",
+              "Guarantee a fixed annual return"
             ],
             correct: 0,
-            explanation: "Scarcity means an item is rare or limited, so it is harder to find and buy."
+            explanation: "Index ETFs replicate the holdings and returns of a benchmark index -- their goal is to match the market, not beat it, keeping costs extremely low."
           },
           {
             type: "true_false",
-            question: "When an item is very easy to find everywhere, its price usually goes up.",
-            correct: false,
-            explanation: "False! When items are abundant and easy to find, prices generally stay lower."
-          },
-          {
-            type: "word_bank",
-            question: "A ___ tells you how much ___ you need to buy a specific toy.",
-            blanks: ["price", "money"],
-            options: ["price", "money", "tag", "time", "coupon"],
-            explanation: "The price tag indicates the amount of financial currency needed to complete a buy."
+            question: "Research consistently shows that most actively managed funds underperform their benchmark index over long periods, especially after fees.",
+            correct: true,
+            explanation: "The SPIVA report consistently shows 80-90% of active managers underperform their benchmark over 15-year periods -- fees are a major culprit."
           },
           {
             type: "multiple_choice",
-            question: "Why might a rare, beautiful diamond cost more than a common smooth pebble?",
+            question: "Which of the following is a recognized investment factor associated with excess returns?",
             options: [
-              "Because diamonds are scarce and hard to find",
-              "Because pebbles look much better in jewelry",
-              "Because pebbles are formed deep in the earth, whereas diamonds are easier to find",
-              "Because pebbles are used to operate machinery, but diamonds are useless"
+              "Value -- stocks cheap relative to their fundamentals",
+              "Popularity -- stocks with the most media coverage",
+              "Volatility -- the most price-volatile stocks",
+              "Size -- preferring the largest companies by market cap"
             ],
             correct: 0,
-            explanation: "Rare items that are highly desired have high value and high prices due to scarcity."
+            explanation: "The value factor -- buying cheap stocks relative to earnings, book value, or cash flow -- has historically delivered excess returns across markets and time periods."
+          },
+          {
+            type: "word_bank",
+            question: "An ETF's ___ ratio is the annual fee charged to investors, which directly ___ net returns.",
+            blanks: ["expense", "reduces"],
+            options: ["expense", "reduces", "profit", "increases", "dividend"],
+            explanation: "Every basis point in fees is a direct drag on returns -- a 1% expense ratio compounds into a massive cost disadvantage over a 30-year investment horizon."
           },
           {
             type: "true_false",
-            question: "Scarcity forces people to make choices about what they want to buy.",
-            correct: true,
-            explanation: "True! Since we cannot have everything we want, we have to choose carefully."
+            question: "A 1% annual fee difference between two funds has no meaningful impact on wealth over a 30-year investment horizon.",
+            correct: false,
+            explanation: "A 1% fee difference on a $100K portfolio earning 7% annually costs over $180,000 in foregone wealth over 30 years -- fees compound just like returns do."
+          }
+        ]
+      },
+      {
+        id: "4-3",
+        title: "Behavioral Finance",
+        studyBrief: "Behavioral finance studies how psychological biases cause investors to make irrational decisions that hurt returns. Loss aversion means investors feel the pain of losses roughly twice as strongly as the pleasure of equivalent gains -- causing them to hold losing stocks too long and sell winners too early. Confirmation bias leads investors to seek information that confirms their existing beliefs while ignoring contradictory evidence. Herding behavior occurs when investors follow the crowd into bubbles or out of markets at the worst times. Overconfidence causes investors to trade too frequently, increasing costs and reducing returns. Understanding these biases is the first step to overcoming them.",
+        questions: [
+          {
+            type: "multiple_choice",
+            question: "Loss aversion describes the tendency for investors to:",
+            options: [
+              "Feel the pain of losses more strongly than the pleasure of equivalent gains",
+              "Avoid all investments with any possibility of loss",
+              "Sell winning investments too quickly to lock in profits",
+              "Follow the crowd regardless of fundamentals"
+            ],
+            correct: 0,
+            explanation: "Kahneman and Tversky found losses feel roughly twice as painful as equivalent gains feel pleasurable -- this asymmetry drives many costly investor mistakes."
+          },
+          {
+            type: "true_false",
+            question: "Confirmation bias causes investors to seek out information that challenges their existing investment thesis.",
+            correct: false,
+            explanation: "Confirmation bias does the opposite -- investors actively seek information that confirms what they already believe and dismiss contradictory evidence."
+          },
+          {
+            type: "multiple_choice",
+            question: "An investor who refuses to sell a stock that has dropped 60% because they 'don't want to lock in a loss' is demonstrating:",
+            options: [
+              "Loss aversion",
+              "Overconfidence",
+              "Herding behavior",
+              "Confirmation bias"
+            ],
+            correct: 0,
+            explanation: "This is a classic loss aversion trap -- the investor lets the fear of realizing a loss override rational decision-making about the stock's actual future prospects."
+          },
+          {
+            type: "word_bank",
+            question: "___ behavior occurs when investors follow the crowd, often buying at market ___ and selling at bottoms.",
+            blanks: ["Herding", "peaks"],
+            options: ["Herding", "peaks", "Rational", "bottoms", "Passive"],
+            explanation: "Herding causes investors to pile in near market tops (when sentiment is euphoric) and panic-sell near bottoms (when fear is highest) -- the opposite of buy low, sell high."
+          },
+          {
+            type: "true_false",
+            question: "Overconfident investors tend to trade more frequently, which research shows generally improves their returns.",
+            correct: false,
+            explanation: "Barber and Odean found that overconfident investors who trade frequently earn significantly lower net returns than those who trade less -- transaction costs and poor timing compound the damage."
           }
         ]
       }
