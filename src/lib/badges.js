@@ -6,11 +6,11 @@ import { getAllPart2Lessons } from "./part2LessonData";
 
 // Block 1 lesson IDs (first 10 lessons across all part-1 units)
 export function getBlock1LessonIds() {
-  return getAllLessons().slice(0, 10).map(l => l.id);
+  return getAllLessons().slice(0, 11).map(l => l.id);
 }
 // Block 2 lesson IDs (first 10 lessons of part 2)
 export function getBlock2LessonIds() {
-  return getAllPart2Lessons().slice(0, 10).map(l => l.id);
+  return getAllPart2Lessons().slice(0, 15).map(l => l.id);
 }
 
 export const BADGES = [
@@ -114,7 +114,7 @@ export const BADGES = [
     id: "block1_grad",
     name: "Block One Graduate",
     emoji: "🎓",
-    desc: "Complete all 10 lessons in Block 1.",
+    desc: "Complete all 11 lessons in Block 1.",
     gems: 8,
     check: (p) => {
       const ids = getBlock1LessonIds();
@@ -125,7 +125,7 @@ export const BADGES = [
     id: "block2_grad",
     name: "Block Two Graduate",
     emoji: "🏅",
-    desc: "Complete all 10 lessons in Block 2.",
+    desc: "Complete all 15 lessons in Block 2.",
     gems: 10,
     check: (p) => {
       const ids = getBlock2LessonIds();
